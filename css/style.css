@@ -6,4 +6,21 @@
 
 header{
     width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
+
+.logo{
+    width: 45%;
+    height: 45%;
+    margin: 25px 0 8px 0;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
