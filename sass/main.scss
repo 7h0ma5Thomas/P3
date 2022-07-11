@@ -4,14 +4,42 @@
     padding: 0;
 }
 
-$font-titles: font-family "shrikhand"
-$font-text: font-family "roboto";
+h1{
+    font-family: "shrikhand", 'Times New Roman', Times, serif;
+}
+
+h2, h3, h4, h5, h6, p{
+    font-family: "roboto", 'Times New Roman', Times, serif;
+}
 
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-text: #353535;
 $color-logo: #7e7e7e;
+$color-search: #eaeaea;
+$color-background: #f6f6f6;
+
+@mixin h2-size {
+    font-size: 150%;
+}
+
+@mixin text-size {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+@mixin button {
+    width: 62%;
+    height: 18%;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-family: "roboto";
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right bottom, $color-secondary, $color-primary);
+}
 
 /* Header */
 
@@ -34,32 +62,84 @@ header{
 
 main{
     width: 100%;
-    height: 800px;
+    height: 1000px;
 }
 
 /* Search bar */
 
 form{
     width: 100%;
-    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #eaeaea;
+    background-color: $color-search;
     box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.3);
-}
-
-.fa-location-dot{
+    .fa-location-dot{
     margin-right: 15px;
-}
-
-input{
-    width: 35%;
+    }
+    input{
+    width: 150px;
     height: 55px;
     background: none;
     border: none;
     font-size: 18px;
-    font-family: $font-text;
-    font-weight: bolder;
-    color: ;
+    font-weight: bold;
+    /*color: ;*/
+    }
+}
+
+/* Wesite introduction */
+
+.intro{
+    width: 100%;
+    height: 28%;
+    text-align: center;
+    background-color: $color-background;
+    & h2{
+        @include h2-size;
+        padding: 8% 15% 3% 15%;
+        /*font-weight: bold;*/
+    }
+    & p{
+        @include text-size;
+        padding: 0 4% 8% 4%;
+        color: $color-text;
+    }
+}
+
+.btn{
+    @include button;
+}
+
+/* Functioning */
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    h2{
+        padding: 12% 5% 10% 5%;
+    }
+}
+
+.sticker{
+    border: solid black 1px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 15%;
+    span{
+        border: solid $color-primary 1px;
+        border-radius: 50%;
+        font-family: "roboto";
+        width: 7.5%;
+        height: 30%;
+        text-align: center;
+        margin-right: 5%;
+    }
+    p{
+       margin-left: 5%;
+    }
 }
