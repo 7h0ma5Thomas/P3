@@ -4,9 +4,14 @@
     padding: 0;
 }
 
+$font-titles: font-family "shrikhand"
+$font-text: font-family "roboto";
+
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-text: #353535;
+$color-logo: #7e7e7e;
 
 /* Header */
 
@@ -16,23 +21,23 @@ header{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
-
-.logo{
+    .header__logo{
     width: 45%;
     height: 45%;
     margin: 25px 0 8px 0;
-}
-
-.logo img{
+    }
+    .header__logo img{
     width: 100%;
     height: 100%;
+    }
 }
 
 main{
     width: 100%;
     height: 800px;
 }
+
+/* Search bar */
 
 form{
     width: 100%;
@@ -54,6 +59,7 @@ input{
     background: none;
     border: none;
     font-size: 18px;
-    font-family: "roboto";
+    font-family: $font-text;
     font-weight: bolder;
+    color: ;
 }
