@@ -39,6 +39,10 @@ $color-background: #f6f6f6;
     background: linear-gradient(to right bottom, $color-secondary, $color-primary);
 }
 
+@mixin shadow {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 /* Welcome page */
 
 /* Header */
@@ -127,6 +131,7 @@ aside{
 }
 
 .stickers{
+    @include shadow;
     align-self: center;
     display: flex;
     align-items: center;
@@ -136,7 +141,6 @@ aside{
     margin: 0 0 26px 8px;
     background: $color-background;
     border: solid $color-background 1px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     span{
         font-family: "roboto";
         font-weight: bold;
@@ -183,14 +187,21 @@ aside{
 }
 
 .card{
-    border: solid black 1px;
+    
     width: 90%;
-    height: 250px;
+    height: 240px;
     margin-bottom: 6%;
     border-radius: 18px/20px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    @include shadow;
+    & a{
+        width: 100%;
+        height: 100%; 
+        text-decoration: none;
+        color: #000000;
+    }
     .card__pic{
         width: 100%;
         height: 70%;
@@ -205,15 +216,17 @@ aside{
         height: 30%;
     }
     & h2{
-        padding: 5px 0 1px 0;
+        padding: 15px 0 0 15px;
         font-size: 115%;
         margin: 0;
     }
     & p{
         width: 40%;
+        padding: 0 0 0 15px;
     }
     & .fa-heart{
-        font-size: 30px;
+        font-size: 27px;
         width: 31px;
+        padding: 15px 0 0 65px;
     }
 }
