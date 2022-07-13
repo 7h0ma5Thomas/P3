@@ -122,7 +122,7 @@ aside{
     }
 }
 
-.sticker{
+.stickers{
     align-self: center;
     display: flex;
     align-items: center;
@@ -130,6 +130,7 @@ aside{
     height: 17%;
     border-radius: 10%/30%;
     margin-bottom: 23px;
+    margin-left: 5%;
     background: $color-background;
     border: solid $color-background 1px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -140,10 +141,11 @@ aside{
         width: 8%;
         height: 35%;
         text-align: center;
-        margin-right: 5%;
         padding-top: 1%;
         background: $color-primary;
         color: #fff;
+        position: relative;
+        right: 14px;
         }
         p{
             margin-left: 5%;
@@ -153,6 +155,12 @@ aside{
             font-size: 140%;
             color: $color-logo;
         }
+    &:hover{
+        background-color:#f5eeff;
+    }
+    &:hover i{
+        color: $color-primary;
+    }   
 }
 
 /* Restaurants */
@@ -179,24 +187,29 @@ aside{
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     .card__pic{
         width: 100%;
-        height: 170px;
+        height: 70%;
         object-fit: cover;
+        border-radius: 18px 20px 0 0;
     }
     .card__fig{
         display: flex;
         flex-direction: column;
-        margin: 4% 0 0 5%;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 30%;
     }
     & h2{
-        margin: 0 0 1% 0;
+        padding: 5px 0 1px 0;
         font-size: 115%;
+        margin: 0;
+    }
+    & p{
+        width: 40%;
     }
     & .fa-heart{
-        font-size: 50px;
-        height: 40px;
-        margin: 0 0 0 80%;
+        font-size: 30px;
+        width: 31px;
     }
 }
