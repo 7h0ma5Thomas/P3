@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -111,15 +112,15 @@ aside h2 {
 
 .stickers {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-  align-self: center;
   display: flex;
-  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 26px;
+  background: #f6f6f6;
   width: 85%;
   height: 16%;
-  border-radius: 20px;
-  margin: 0 0 26px 8px;
-  background: #f6f6f6;
-  border: solid #f6f6f6 1px;
+  margin-left: 8px;
+  align-items: center;
+  align-self: center;
 }
 .stickers span {
   font-family: "roboto";
@@ -252,4 +253,58 @@ footer i {
 }
 footer .fa-handshake-angle {
   font-size: 12px;
+}
+
+/* La Palette du goût */
+/* header */
+.header__logo a {
+  text-decoration: none;
+  color: #353535;
+}
+
+.fa-arrow-left-long {
+  position: absolute;
+  left: 30px;
+  font-size: 150%;
+}
+
+/* Picture menu */
+.pic-menu {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pic-menu img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Menu */
+.menu {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+}
+
+.tile {
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 26px;
+  background: #f6f6f6;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 16%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px 0 0 10px;
+}
+.tile h3 {
+  font-size: 120%;
+}
+.tile p {
+  font-size: 100%;
+}
+.tile span {
+  position: relative;
 }/*# sourceMappingURL=main.css.map */

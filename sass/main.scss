@@ -39,6 +39,13 @@ $color-background: #f6f6f6;
     background: linear-gradient(to right bottom, $color-secondary, $color-primary);
 }
 
+@mixin panel {
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 26px;
+    background: $color-background;
+}
+
 @mixin shadow {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
@@ -132,15 +139,12 @@ aside{
 
 .stickers{
     @include shadow;
-    align-self: center;
-    display: flex;
-    align-items: center;
+    @include panel;
     width: 85%;
     height: 16%;
-    border-radius: 20px;
-    margin: 0 0 26px 8px;
-    background: $color-background;
-    border: solid $color-background 1px;
+    margin-left: 8px;
+    align-items: center;
+    align-self: center;
     span{
         font-family: "roboto";
         font-weight: bold;
@@ -273,5 +277,58 @@ footer{
     }
     .fa-handshake-angle{
         font-size: 12px;
+    }
+}
+
+/* La Palette du goût */
+
+/* header */
+.header__logo a{
+    text-decoration: none;
+    color: $color-text;
+}
+
+.fa-arrow-left-long{
+    position: absolute;
+    left: 30px;
+    font-size: 150%;
+}
+
+/* Picture menu */
+
+.pic-menu{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Menu */
+
+.menu{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+.tile{
+    @include panel;
+    @include shadow;
+    width: 100%;
+    height: 16%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 0 0 10px;
+    h3{
+        font-size: 120%;
+    }
+    p{
+        font-size: 100%;
+    }
+    span{
+        position: relative;
+        
     }
 }
