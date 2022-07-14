@@ -20,6 +20,10 @@ p {
   color: #000000;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Welcome page */
 /* Header */
 header {
@@ -81,14 +85,12 @@ form input {
   padding: 0 4% 8% 4%;
   color: #353535;
 }
-.intro a {
-  width: 100%;
-  height: 10%;
-}
 
 .btn {
   width: 62%;
   height: 18%;
+  margin: auto;
+  padding-top: 15px;
   border-radius: 30px;
   border: none;
   font-size: 16px;
@@ -271,20 +273,38 @@ footer .fa-handshake-angle {
 /* Picture menu */
 .pic-menu {
   width: 100%;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: auto;
 }
 .pic-menu img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Menu */
 .menu {
   width: 100%;
   height: auto;
-  padding: 15px;
+  padding: 30px 15px 0 15px;
+  overflow: hidden;
+  border-radius: 40px 40px 0 0;
+  border: solid black 1px;
+  background: #f6f6f6;
+  position: relative;
+  bottom: 55px;
+}
+.menu i {
+  margin-left: 60px;
+}
+.menu h1 {
+  margin-bottom: 30px;
+}
+.menu h2 {
+  border-bottom: solid #99E2D0 3px;
+  width: 13%;
+  margin-bottom: 15px;
+  font-size: 110%;
 }
 
 .tile {
@@ -296,15 +316,23 @@ footer .fa-handshake-angle {
   width: 100%;
   height: 16%;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 10px 0 0 10px;
+  /*padding: 12px 10px 12px 10px;*/
+  background: #fff;
 }
 .tile h3 {
-  font-size: 120%;
+  font-size: 110%;
 }
 .tile p {
   font-size: 100%;
+  padding-top: 4px;
+  width: 100%;
 }
 .tile span {
   position: relative;
+  left: 290px;
+  bottom: 18px;
+  height: 20px;
+  width: 30px;
+  font-family: "roboto", "Times New Roman", Times, serif;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
