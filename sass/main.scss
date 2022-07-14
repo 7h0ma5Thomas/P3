@@ -372,21 +372,15 @@ footer{
     background: linear-gradient(to right bottom, $color-secondary, $color-primary);;
     height: 500px;
     line-height: 500px;
+    text-align: center;
+    h1{
+    font-weight: bold;
+    color: #fff;
+    text-shadow : 0 5px 5px rgba(0, 0, 0, 0.3);
+    }
 }
 
 .loader-bars:before{
-    content: '';
-    display: block;
-    position: absolute;
-    left: 770px;
-    top: 240px;
-    width: 10px;
-    height: 30px;
-    background-color: #fff;
-    animation:grow 1s linear infinite;
-}
-
-.loader-bars:after{
     content: '';
     display: block;
     position: absolute;
@@ -395,10 +389,11 @@ footer{
     width: 10px;
     height: 30px;
     background-color: #fff;
-    animation:grow 1s linear -.33s infinite;
+    animation:grow 1s linear infinite;
+    @include shadow;
 }
 
-.loader-bars span{
+.loader-bars:after{
     content: '';
     display: block;
     position: absolute;
@@ -407,7 +402,21 @@ footer{
     width: 10px;
     height: 30px;
     background-color: #fff;
+    animation:grow 1s linear -.33s infinite;
+    @include shadow;
+}
+
+.loader-bars span{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 830px;
+    top: 240px;
+    width: 10px;
+    height: 30px;
+    background-color: #fff;
     animation:grow 1s linear -.66s infinite;
+    @include shadow;
 }
 
 @keyframes grow{

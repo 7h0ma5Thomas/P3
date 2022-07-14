@@ -347,22 +347,15 @@ footer .fa-handshake-angle {
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   height: 500px;
   line-height: 500px;
+  text-align: center;
+}
+.loader h1 {
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .loader-bars:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 770px;
-  top: 240px;
-  width: 10px;
-  height: 30px;
-  background-color: #fff;
-  -webkit-animation: grow 1s linear infinite;
-          animation: grow 1s linear infinite;
-}
-
-.loader-bars:after {
   content: "";
   display: block;
   position: absolute;
@@ -371,11 +364,12 @@ footer .fa-handshake-angle {
   width: 10px;
   height: 30px;
   background-color: #fff;
-  -webkit-animation: grow 1s linear -0.33s infinite;
-          animation: grow 1s linear -0.33s infinite;
+  -webkit-animation: grow 1s linear infinite;
+          animation: grow 1s linear infinite;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.loader-bars span {
+.loader-bars:after {
   content: "";
   display: block;
   position: absolute;
@@ -384,8 +378,23 @@ footer .fa-handshake-angle {
   width: 10px;
   height: 30px;
   background-color: #fff;
+  -webkit-animation: grow 1s linear -0.33s infinite;
+          animation: grow 1s linear -0.33s infinite;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.loader-bars span {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 830px;
+  top: 240px;
+  width: 10px;
+  height: 30px;
+  background-color: #fff;
   -webkit-animation: grow 1s linear -0.66s infinite;
           animation: grow 1s linear -0.66s infinite;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 @-webkit-keyframes grow {
