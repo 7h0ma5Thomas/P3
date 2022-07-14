@@ -98,6 +98,11 @@ form input {
   font-weight: bold;
   color: #fff;
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.btn:hover {
+  background: linear-gradient(to right bottom, #fa96df, #b581f5);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Functioning */
