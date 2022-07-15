@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -231,10 +230,17 @@ aside h2 {
   width: 50%;
   padding: 0 0 0 15px;
 }
-.card .fa-heart {
+.card .hearts {
   font-size: 27px;
   width: 31px;
   padding: 15px 0 0 50px;
+  /*&:active{
+      transform: ;
+  }*/
+}
+.card .fa-solid {
+  /*display: none;*/
+  color: gradient(to top bottom, #FF79DA, #9356DC);
 }
 
 footer {
@@ -264,7 +270,7 @@ footer .fa-handshake-angle {
   font-size: 12px;
 }
 
-/* La Palette du goût */
+/* Restaurants menu */
 /* header */
 .header__logo a {
   text-decoration: none;
