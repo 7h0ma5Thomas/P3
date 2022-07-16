@@ -393,46 +393,47 @@ footer{
 
 .loader{
     background: linear-gradient(to right bottom, $color-secondary, $color-primary);
-    height: 500px;
-    line-height: 150px;
+    height: 2256px;
+    line-height: 600px;
     text-align: center;
     h1{
     font-weight: bold;
     color: #fff;
     text-shadow : 0 5px 5px rgba(0, 0, 0, 0.3);
+    padding-left: 130px;
+    position: fixed;
     }
-}
+    .loader-double{
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        position: fixed;
+        top: 275px;
+        right: 265px;
+        border-radius: 50px;
+        border: 6px solid transparent;
+        border-top-color: #fff;
+        border-bottom-color: #fff;
+        animation: spin 1s linear infinite;
+        -webkit-animation: spin 1s linear infinite;
+    }
 
-.loader-double{
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    top: 150px;
-    right: 150px;
-    border-radius: 50px;
-    border: 6px solid transparent;
-    border-top-color: #fff;
-    border-bottom-color: #fff;
-    animation: spin 1s linear infinite;
-    -webkit-animation: spin 1s linear infinite;
-}
-
-.loader-double:after{
-    content:'';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    bottom: 5px;
-    right: 5px;
-    border-radius: 50px;
-    border: 6px solid transparent;
-    border-top-color: #fff;
-    border-bottom-color: #fff;
-    opacity: 0.6;
-    animation: spinreverse 2s linear infinite;
-    -webkit-animation: spinreverse 2s linear infinite;
+    .loader-double:after{
+        content:'';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        bottom: 5px;
+        right: 5px;
+        border-radius: 50px;
+        border: 6px solid transparent;
+        border-top-color: #fff;
+        border-bottom-color: #fff;
+        opacity: 0.6;
+        animation: spinreverse 2s linear infinite;
+        -webkit-animation: spinreverse 2s linear infinite;
+    }
 }
 
 @keyframes spin{
