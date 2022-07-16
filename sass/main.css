@@ -182,6 +182,7 @@ aside h2 {
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
 .card a {
   width: 100%;
@@ -216,7 +217,6 @@ aside h2 {
 .card .card__fig {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 100%;
   height: 30%;
 }
@@ -230,17 +230,21 @@ aside h2 {
   width: 50%;
   padding: 0 0 0 15px;
 }
-.card .hearts {
+.card .card__hearts {
   font-size: 27px;
   width: 31px;
-  padding: 15px 0 0 50px;
   /*&:active{
       transform: ;
   }*/
 }
+.card .fa-regular {
+  /*padding: 15px 0 0 50px;*/
+  position: relative;
+}
 .card .fa-solid {
   /*display: none;*/
-  color: gradient(to top bottom, #FF79DA, #9356DC);
+  /*padding: 15px 0 0 50px;*/
+  color: linear-gradient(to right bottom, #FF79DA, #9356DC);
 }
 
 footer {
@@ -374,17 +378,18 @@ footer .fa-handshake-angle {
 
 .loader-double {
   width: 50px;
-  height: 70px;
+  height: 50px;
   display: inline-block;
+  vertical-align: middle;
   position: relative;
-  top: 180px;
+  top: 150px;
   right: 150px;
   border-radius: 50px;
   border: 6px solid transparent;
-  border-top: #fff;
-  border-bottom: #fff;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  animation: spin 1s linear infinite;
   -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
 }
 
 .loader-double:after {
@@ -397,62 +402,74 @@ footer .fa-handshake-angle {
   border-radius: 50px;
   border: 6px solid transparent;
   border-top-color: #fff;
-  border-bottom: #fff;
+  border-bottom-color: #fff;
   opacity: 0.6;
+  animation: spinreverse 2s linear infinite;
   -webkit-animation: spinreverse 2s linear infinite;
-          animation: spinreverse 2s linear infinite;
-}
-
-.loader-double::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  bottom: 15px;
-  right: 15px;
-  border-radius: 50px;
-  border: 3px solid transparent;
-  border-top-color: #fff;
-  border-bottom: #fff;
-  opacity: 0.6;
-  -webkit-animation: spinreverse 2.5s linear infinite;
-          animation: spinreverse 2.5s linear infinite;
 }
 
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
   }
 }
 
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
   }
 }
 @-webkit-keyframes spinreverse {
   0% {
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
   100% {
     transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
   }
 }
 @keyframes spinreverse {
   0% {
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
   100% {
     transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
   }
 }/*# sourceMappingURL=main.css.map */
