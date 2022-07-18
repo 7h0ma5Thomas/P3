@@ -10,12 +10,12 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-family: "roboto", "Times New Roman", Times, serif;
-  font-size: 150%;
+  font-size: 25px;
 }
 
 p {
   font-family: "roboto", "Times New Roman", Times, serif;
-  font-size: 110%;
+  font-size: 20px;
   color: #000000;
 }
 
@@ -197,7 +197,7 @@ aside h2 {
   color: #0b9976;
   font-family: "roboto", "Times New Roman", Times, serif;
   font-weight: bolder;
-  font-size: 100%;
+  font-size: 17px;
   width: 100px;
   height: 35px;
   border-radius: 3px;
@@ -224,11 +224,12 @@ aside h2 {
   padding: 15px 0 0 15px;
   font-size: 115%;
   margin: 0;
-  width: 180px;
+  width: 50%;
 }
 .card p {
   width: 50%;
   padding: 0 0 0 15px;
+  font-size: 115%;
 }
 .card .fa-regular {
   position: absolute;
