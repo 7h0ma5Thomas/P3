@@ -356,6 +356,7 @@ footer .fa-handshake-angle {
   margin-bottom: 15px;
   font-size: 110%;
   font-weight: normal;
+  opacity: 0;
 }
 
 .tile {
@@ -369,6 +370,7 @@ footer .fa-handshake-angle {
   flex-direction: column;
   padding: 10px 10px 0 10px;
   background: #fff;
+  opacity: 0;
 }
 .tile h3 {
   font-size: 105%;
@@ -388,14 +390,69 @@ footer .fa-handshake-angle {
   font-weight: bold;
 }
 
+.starters {
+  animation: up 1.5s ease-in-out forwards;
+  -webkit-animation: up 1.5s ease-in-out forwards;
+}
+
+.dishes {
+  animation: up 1.5s 0.5s ease-in-out forwards;
+  -webkit-animation: up 1.5s 0.5s ease-in-out forwards;
+}
+
+.desserts {
+  animation: up 1.5s 0.5s ease-in-out forwards;
+  -webkit-animation: up 1.5s 0.5s ease-in-out forwards;
+}
+
+.tile {
+  animation: up 1.5s 1s ease-in-out forwards;
+  -webkit-animation: up 1.5s 1s ease-in-out forwards;
+}
+
+@-webkit-keyframes up {
+  from {
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  from {
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+}
 /* Loader */
 .loader {
   position: absolute;
   width: 100%;
   height: 100%;
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
-  /*height: 2256px;
-  */
   line-height: 600px;
   text-align: center;
   opacity: 0;
@@ -404,6 +461,9 @@ footer .fa-handshake-angle {
   -moz-transition: opacity 3s ease-out;
   -ms-transition: opacity 3s ease-out;
   -o-transition: opacity 3s ease-out;
+  /*animation: up 3s;
+  -webkit-animation: up 3s;
+  */
 }
 .loader h1 {
   font-weight: bold;
@@ -507,4 +567,30 @@ footer .fa-handshake-angle {
     -ms-transform: rotate(-360deg);
     -o-transform: rotate(-360deg);
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*@keyframes up {
+    from{
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+}
+    to{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+}
+
+header{
+    animation: up 1s;
+    -webkit-animation: up 1s;
+}
+
+main{
+    animation: up 4s;
+    -webkit-animation: up 4s;
+}*//*# sourceMappingURL=main.css.map */
