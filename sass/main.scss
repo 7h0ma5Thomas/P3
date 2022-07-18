@@ -208,7 +208,6 @@ aside{
     display: flex;
     flex-direction: column;
     @include shadow;
-    
     flex-wrap: wrap;
     a{
         width: 100%;
@@ -388,7 +387,7 @@ footer{
     flex-direction: column;
     padding: 10px 10px 0 10px;
     background: #fff;
-    opacity: 0;
+    /*opacity: 0;*/
     h3{
         font-size: 105%;
     }
@@ -406,9 +405,14 @@ footer{
         font-family: "roboto", 'Times New Roman', Times, serif;
         font-weight: bold;
     }
+    /*.check{
+        width: 40px;
+        position: relative;
+
+    }*/
 }
 
-.starters{
+/*.starters{
     animation: up 1.5s ease-in-out forwards;
     -webkit-animation: up 1.5s ease-in-out forwards;
 }
@@ -445,7 +449,7 @@ footer{
         -o-transform: translateY(0);
         opacity: 1;
 }
-}
+}*/
 
 /* Loader */
 
