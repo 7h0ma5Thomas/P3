@@ -85,11 +85,14 @@ form input {
   padding: 0 4% 8% 4%;
   color: #353535;
 }
+.intro a {
+  margin: 0;
+}
 
 .btn {
   width: 58%;
   height: 50px;
-  margin: auto;
+  margin: 0 auto;
   padding-top: 15px;
   border-radius: 30px;
   border: none;
@@ -238,13 +241,17 @@ aside h2 {
   }*/
 }
 .card .fa-regular {
-  /*padding: 15px 0 0 50px;*/
-  position: relative;
+  position: absolute;
+  margin: 190px 0 0 290px;
+  font-size: 25px;
+  display: none;
 }
 .card .fa-solid {
-  /*display: none;*/
-  /*padding: 15px 0 0 50px;*/
+  position: absolute;
+  margin: 190px 0 0 290px;
+  font-size: 25px;
   color: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  /*display: none;*/
 }
 
 footer {

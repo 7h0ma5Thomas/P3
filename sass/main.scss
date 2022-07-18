@@ -34,7 +34,7 @@ $color-background: #f6f6f6;
 @mixin button {
     width: 58%;
     height: 50px;
-    margin: auto;
+    margin: 0 auto;
     padding-top: 15px;
     border-radius: 30px;
     border: none;
@@ -121,6 +121,9 @@ form{
     p{
         padding: 0 4% 8% 4%;
         color: $color-text;
+    }
+    a{
+        margin: 0;
     }
 }
 
@@ -263,13 +266,17 @@ aside{
         }*/
     }
     .fa-regular{
-        /*padding: 15px 0 0 50px;*/
-        position: relative;
+        position: absolute;
+        margin: 190px 0 0 290px;
+        font-size: 25px;
+        display: none;
     }
     .fa-solid{
-        /*display: none;*/
-        /*padding: 15px 0 0 50px;*/
+        position: absolute;
+        margin: 190px 0 0 290px;
+        font-size: 25px;
         color: linear-gradient(to right bottom, $color-secondary, $color-primary);
+        /*display: none;*/
     }
 }
 
@@ -304,6 +311,7 @@ footer{
 /* Restaurants menu */
 
 /* header */
+
 .header__logo a{
     text-decoration: none;
     color: $color-text;
