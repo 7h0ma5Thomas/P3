@@ -10,12 +10,12 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-family: "roboto", "Times New Roman", Times, serif;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 p {
   font-family: "roboto", "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
 }
 
@@ -368,19 +368,25 @@ footer .fa-handshake-angle {
   flex-direction: column;
   background: #fff;
   /*opacity: 0;*/
+  /*h3{
+      font-size: 100%;
+  }
+  p{
+      font-size: 95%;
+      width: 100%;
+      margin: 5px 15px 0 15px;
+  }*/
 }
-.tile h3 {
-  font-size: 105%;
+.tile .tile__body {
   text-overflow: ellipsis;
   overflow: hidden;
-  margin: 15px 15px 0 15px;
+  padding: 11px 12px;
 }
-.tile p {
-  font-size: 95%;
-  width: 100%;
-  margin: 5px 15px 0 15px;
-  text-overflow: ellipsis;
-  overflow: hidden;
+.tile .tile__body h3 {
+  font-size: 18px;
+}
+.tile .tile__body p {
+  font-size: 16px;
 }
 .tile span {
   position: relative;
