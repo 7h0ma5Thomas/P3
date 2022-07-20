@@ -405,52 +405,50 @@ footer{
     @include panel;
     @include shadow;
     width: 100%;
-    height: 16%;
-    flex-direction: column;
+    height: 70px;
+    justify-content: space-between;
     background: #fff;
-    opacity: 0;
+    /*opacity: 0;*/
     .tile__body{
         text-overflow: ellipsis;
         overflow: hidden;
-        padding: 11px 12px;
+        padding: 12px;
+        width: 600px;
         h3{
-            font-size: 18px;
+            font-size: 17px;
         }
         p{
-            font-size: 16px;
+            font-size: 14px;
+            padding-top: 4px;
         }
     }
-    /*h3{
-        font-size: 100%;
+    .price{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 30px;
+       margin: 30px 0 0 40px;
     }
-    p{
-        font-size: 95%;
-        width: 100%;
-        margin: 5px 15px 0 15px;
-    }*/
     span{
-        position: relative;
-        left: 290px;
-        bottom: 18px;
-        height: 20px;
-        width: 30px;
+        
         font-family: "roboto", 'Times New Roman', Times, serif;
         font-weight: bold;
     }
-    &:active{
+    /*&:active{
         animation: slide 0.5s ease-in-out 0s 1 normal both;
-        }
+        }*/
     .check{
-        width: 70px;
-        height: 78px;
-        align-self: flex-end;
-        position: absolute;
+        /*width: 70px;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: $color-tertiary;
         border-radius: 0 20px 20px 0;
         -webkit-border-radius: 0 20px 20px 0;
         -moz-border-radius: 0 20px 20px 0;
         -ms-border-radius: 0 20px 20px 0;
         -o-border-radius: 0 20px 20px 0;  
+        opacity: 0;
     }
     .fa-circle-check{
         color: #fff;
@@ -458,7 +456,7 @@ footer{
     }
 }
 
-.starters{
+/*.starters{
     animation: up 1.5s ease forwards;
     -webkit-animation: up 1.5s ease forwards;
 }
@@ -491,7 +489,7 @@ footer{
 .slide4{
     animation: up 1.5s  1.9s ease forwards;
     -webkit-animation: up 1.5s  1.9s ease forwards;
-}
+}*/
 
 @keyframes up {
     from{
