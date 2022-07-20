@@ -364,16 +364,33 @@ footer{
     border-radius: 40px 40px 0 0;
     background: $color-background;
     bottom: 55px;
+    h2{
+        border-bottom: solid $color-tertiary 3px;
+        width: 13%;
+        margin-bottom: 15px;
+        font-size: 110%;
+        font-weight: normal;
+        opacity: 0;
+    }
+}
+
+.heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    h1{
+        width: 80%;
+       } 
+}
+.hearts{
+    display: flex;
+    padding: 4px 10px 0 0;
     .fa-regular{
-        position: relative;
-        left: 300px; 
-        bottom: 30px;
+        position: absolute;
         font-size: 180%;
     }
     .fa-solid{
-        position: relative;
-        left: 267px; 
-        bottom: 30px;
         font-size: 180%;
         color: $color-primary;
         opacity: 0;
@@ -381,14 +398,6 @@ footer{
             animation: heart .7s ease-in-out forwards;
             -webkit-animation: heart .7s ease-in-out forwards;
         }
-    }
-    h2{
-        border-bottom: solid $color-tertiary 3px;
-        width: 13%;
-        margin-bottom: 15px;
-        font-size: 110%;
-        font-weight: normal;
-        /*opacity: 0;*/
     }
 }
 
@@ -399,7 +408,7 @@ footer{
     height: 16%;
     flex-direction: column;
     background: #fff;
-    /*opacity: 0;*/
+    opacity: 0;
     .tile__body{
         text-overflow: ellipsis;
         overflow: hidden;
@@ -441,12 +450,15 @@ footer{
         -webkit-border-radius: 0 20px 20px 0;
         -moz-border-radius: 0 20px 20px 0;
         -ms-border-radius: 0 20px 20px 0;
-        -o-border-radius: 0 20px 20px 0;
-        
+        -o-border-radius: 0 20px 20px 0;  
+    }
+    .fa-circle-check{
+        color: #fff;
+
     }
 }
 
-/*.starters{
+.starters{
     animation: up 1.5s ease-in-out forwards;
     -webkit-animation: up 1.5s ease-in-out forwards;
 }
@@ -483,7 +495,7 @@ footer{
         -o-transform: translateY(0);
         opacity: 1;
 }
-}*/
+}
 
 @keyframes slide {
 	0% {
