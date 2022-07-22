@@ -124,6 +124,7 @@ aside h2 {
   border-radius: 20px;
   margin-bottom: 26px;
   background: #f6f6f6;
+  cursor: pointer;
   width: 85%;
   height: 16%;
   margin-left: 8px;
@@ -352,6 +353,7 @@ footer .fa-handshake-angle {
 .hearts {
   display: flex;
   padding: 4px 10px 0 0;
+  cursor: pointer;
 }
 .hearts .fa-regular {
   position: absolute;
@@ -372,45 +374,61 @@ footer .fa-handshake-angle {
   border-radius: 20px;
   margin-bottom: 26px;
   background: #f6f6f6;
+  cursor: pointer;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 70px;
-  justify-content: space-between;
   background: #fff;
-  /*opacity: 0;*/
-  /*&:active{
-      animation: slide 0.5s ease-in-out 0s 1 normal both;
-      }*/
+}
+.tile .slide-left {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.tile .slide-left:hover {
+  animation: text-slide 1s ease both;
+  -webkit-animation: text-slide 1s ease both;
 }
 .tile .tile__body {
-  text-overflow: ellipsis;
-  overflow: hidden;
   padding: 12px;
-  width: 600px;
+  width: 80%;
+  height: 100%;
 }
 .tile .tile__body h3 {
   font-size: 17px;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .tile .tile__body p {
   font-size: 14px;
   padding-top: 4px;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .tile .price {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  margin: 30px 0 0 40px;
+  height: 100%;
+  margin: 10px 20px 0 0;
+  width: 30px;
 }
 .tile span {
   font-family: "roboto", "Times New Roman", Times, serif;
   font-weight: bold;
 }
 .tile .check {
-  /*width: 70px;*/
+  width: 0;
+  height: 100%;
+  left: 290px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px 20px 20px 10px;
   background: #99E2D0;
   border-radius: 0 20px 20px 0;
   -webkit-border-radius: 0 20px 20px 0;
@@ -419,8 +437,13 @@ footer .fa-handshake-angle {
   -o-border-radius: 0 20px 20px 0;
   opacity: 0;
 }
+.tile .check:hover {
+  animation: check-slide 1s ease both;
+  -webkit-animation: check-slide 1s ease both;
+}
 .tile .fa-circle-check {
   color: #fff;
+  font-size: 23px;
 }
 
 /*.starters{
@@ -457,20 +480,40 @@ footer .fa-handshake-angle {
     animation: up 1.5s  1.9s ease forwards;
     -webkit-animation: up 1.5s  1.9s ease forwards;
 }*/
-@-webkit-keyframes slide {
-  0% {
-    transform: translateX(0);
+@-webkit-keyframes text-slide {
+  from {
+    width: 100%;
   }
-  100% {
-    transform: translateX(-100px);
+  to {
+    width: 80%;
   }
 }
-@keyframes slide {
-  0% {
-    transform: translateX(0);
+@keyframes text-slide {
+  from {
+    width: 100%;
   }
-  100% {
-    transform: translateX(-100px);
+  to {
+    width: 80%;
+  }
+}
+@-webkit-keyframes check-slide {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 20%;
+  }
+}
+@keyframes check-slide {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 20%;
   }
 }
 .wrap-btn {
