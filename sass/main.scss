@@ -420,8 +420,8 @@ footer{
         display: flex;
         justify-content: space-between;
         &:hover{
-            animation: text-slide 1s ease both;
-            -webkit-animation: text-slide 1s ease both;
+            animation: text-slide 1s ease-in-out both;
+            -webkit-animation: text-slide 1s ease-in-out both;
         }
     }
     .tile__body{
@@ -460,23 +460,40 @@ footer{
         justify-content: center;
         align-items: center;
         border-radius: 10px 20px 20px 10px;
-        background: $color-tertiary;
+        background-color: $color-tertiary;
+        color: #fff;
         border-radius: 0 20px 20px 0;
         -webkit-border-radius: 0 20px 20px 0;
         -moz-border-radius: 0 20px 20px 0;
         -ms-border-radius: 0 20px 20px 0;
         -o-border-radius: 0 20px 20px 0;
         opacity: 0;
-        &:hover{
-            animation: check-slide 1s ease both;
-            -webkit-animation: check-slide 1s ease both;
-}
+    }
+    &:hover .check{
+        animation: check-slide 0.5s ease-in-out both;
+        -webkit-animation: check-slide 0.5s ease-in-out both;
     }
     .fa-circle-check{
         color: #fff;
         font-size: 23px;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transition: 0.8s transform ease-in-out;
+        -webkit-transition: 0.8s transform ease-in-out;
+        -moz-transition: 0.8s transform ease-in-out;
+        -ms-transition: 0.8s transform ease-in-out;
+        -o-transition: 0.8s transform ease-in-out;
+}   
+    &:hover .fa-circle-check{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
     }
-    
 }
 
 /*.starters{
