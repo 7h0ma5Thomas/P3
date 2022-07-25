@@ -31,6 +31,11 @@ $color-logo: #7e7e7e;
 $color-search: #eaeaea;
 $color-background: #f6f6f6;
 
+@mixin flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin button-1 {
     width: 250px;
     height: 50px;
@@ -162,12 +167,25 @@ form{
 
 aside{
     border-bottom: solid $color-background 2px;
-    display: flex;
-    flex-direction: column;
+    @include flexbox;
     width: 100%;
-    height: 450px;
+    height: 400px;
     h2{
-        padding: 50px 30px 30px 30px;
+        padding: 0;
+        height: 30px;
+        margin: 40px 20px 0px 20px;
+        font-size: x-large;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        @include flexbox;
+        justify-content: center;    
+        @media screen and (min-width: 1080px){
+            align-self: center;
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
 }
 
@@ -175,8 +193,7 @@ aside{
     @include shadow;
     @include panel;
     width: 85%;
-    height: 16%;
-    margin-left: 8px;
+    height: 20%;
     align-items: center;
     align-self: center;
     @media screen and (min-width: 600px){
@@ -213,29 +230,34 @@ aside{
 
 /* Restaurants */
 
-.box{
+.resto{
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 1200px;
+    @include flexbox;
     background-color: $color-background;
+    padding-bottom: 50px;
 }
 
-#box__title{
-    margin: 50px 0 30px 20px;
+#resto__title{
+    margin: 50px 0 0 20px;
     align-self: flex-start;
     font-size: x-large;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    @include flexbox;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .card{
     width: 90%;
     height: 240px;
-    margin-bottom: 6%;
     border-radius: 18px/20px;
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
+    @include flexbox;
     @include shadow;
     flex-wrap: wrap;
     a{
@@ -268,8 +290,7 @@ aside{
         border-radius: 18px 20px 0 0;
     }
     .card__fig{
-        display: flex;
-        flex-direction: column;
+        @include flexbox;
         width: 100%;
         height: 30%;
     }
@@ -312,8 +333,7 @@ aside{
 footer{
     width: 100%;
     height: 220px;
-    display: flex;
-    flex-direction: column;
+    @include flexbox;
     background: $color-text;
     color: #fff;
     padding: 20px;
@@ -328,8 +348,7 @@ footer{
         }
     }
     .links{
-        display: flex;
-        flex-direction: column;
+        @include flexbox;
         width: 100%;
         @media screen and (min-width: 600px){
             flex-direction: row;
