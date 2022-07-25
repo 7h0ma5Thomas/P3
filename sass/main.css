@@ -77,12 +77,17 @@ form input {
   text-align: center;
   background-color: #f6f6f6;
 }
+@media screen and (min-width: 600px) {
+  .intro {
+    height: 230px;
+  }
+}
 .intro h2 {
-  padding: 8% 15% 3% 15%;
+  padding: 30px 55px 10px 55px;
   font-weight: 900;
 }
 .intro p {
-  padding: 0 4% 8% 4%;
+  padding: 0 15px 30px 15px;
   color: #353535;
 }
 
@@ -115,7 +120,7 @@ aside {
   height: 450px;
 }
 aside h2 {
-  padding: 12% 5% 10% 5%;
+  padding: 50px 30px 30px 30px;
 }
 
 .stickers {
@@ -150,7 +155,7 @@ aside h2 {
   right: 14px;
 }
 .stickers p {
-  margin-left: 5%;
+  margin-left: 16px;
   font-weight: bold;
 }
 .stickers i {
@@ -175,8 +180,9 @@ aside h2 {
 }
 
 #box__title {
-  margin: 10% 0 5% 5%;
+  margin: 50px 0 30px 20px;
   align-self: flex-start;
+  font-size: x-large;
 }
 
 .card {
