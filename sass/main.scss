@@ -32,7 +32,7 @@ $color-search: #eaeaea;
 $color-background: #f6f6f6;
 
 @mixin button-1 {
-    width: 58%;
+    width: 250px;
     height: 50px;
     margin: auto;
     padding-top: 15px;
@@ -47,7 +47,7 @@ $color-background: #f6f6f6;
 }
 
 @mixin button-2 {
-    width: 58%;
+    width: 200px;
     height: 50px;
     margin-bottom: 60px;
     padding-top: 15px;
@@ -251,8 +251,8 @@ aside{
         text-align: center;
         padding-top: 7px;
         transform: translate(-5%, 5%);
-        left: 245px;
-        margin-top: 15px;
+        left: 245px; /*65%*/
+        margin-top: 15px; /*4%*/
     }
     .card__pic{
         width: 100%;
@@ -270,10 +270,8 @@ aside{
         padding: 15px 0 0 15px;
         font-size: 115%;
         margin: 0;
-        width: 50%;
     }
     p{
-        width: 50%;
         padding: 0 0 0 15px;
         font-size: 115%;
     }
@@ -311,10 +309,26 @@ footer{
     flex-direction: column;
     background: $color-text;
     color: #fff;
-    padding: 20px 0 0 20px;
+    padding: 20px;
+    @media screen and (min-width: 600px){
+        align-items: center;
+    }
     h1{
         margin: 0 0 15px 0;
         font-size: 120%;
+        @media screen and (min-width: 600px){
+            font-size: xx-large;
+        }
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        @media screen and (min-width: 600px){
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 40px;
+        }
     }
     a{
         margin: 0 0 10px 0;
@@ -373,7 +387,7 @@ footer{
     bottom: 55px;
     h2{
         border-bottom: solid $color-tertiary 3px;
-        width: 13%;
+        width: 45px;
         margin-bottom: 15px;
         font-size: 110%;
         font-weight: normal;

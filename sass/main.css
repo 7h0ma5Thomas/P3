@@ -87,7 +87,7 @@ form input {
 }
 
 .btn {
-  width: 58%;
+  width: 250px;
   height: 50px;
   margin: auto;
   padding-top: 15px;
@@ -205,8 +205,8 @@ aside h2 {
   text-align: center;
   padding-top: 7px;
   transform: translate(-5%, 5%);
-  left: 245px;
-  margin-top: 15px;
+  left: 245px; /*65%*/
+  margin-top: 15px; /*4%*/
 }
 .card .card__pic {
   width: 100%;
@@ -225,10 +225,8 @@ aside h2 {
   padding: 15px 0 0 15px;
   font-size: 115%;
   margin: 0;
-  width: 50%;
 }
 .card p {
-  width: 50%;
   padding: 0 0 0 15px;
   font-size: 115%;
 }
@@ -273,11 +271,33 @@ footer {
   flex-direction: column;
   background: #353535;
   color: #fff;
-  padding: 20px 0 0 20px;
+  padding: 20px;
+}
+@media screen and (min-width: 600px) {
+  footer {
+    align-items: center;
+  }
 }
 footer h1 {
   margin: 0 0 15px 0;
   font-size: 120%;
+}
+@media screen and (min-width: 600px) {
+  footer h1 {
+    font-size: xx-large;
+  }
+}
+footer .links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  footer .links {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
 }
 footer a {
   margin: 0 0 10px 0;
@@ -333,7 +353,7 @@ footer .fa-handshake-angle {
 }
 .menu h2 {
   border-bottom: solid #99E2D0 3px;
-  width: 13%;
+  width: 45px;
   margin-bottom: 15px;
   font-size: 110%;
   font-weight: normal;
@@ -579,7 +599,7 @@ footer .fa-handshake-angle {
 }
 
 .btn-2 {
-  width: 58%;
+  width: 200px;
   height: 50px;
   margin-bottom: 60px;
   padding-top: 15px;
