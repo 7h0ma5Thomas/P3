@@ -737,8 +737,8 @@ footer{
     align-items: center;
     position: fixed;
     z-index: 1;
-    animation: fade-in 3s ease 1 normal forwards;
     animation: scale-out 1s ease 1s 1 normal forwards;
+    -webkit-animation: scale-out 1s ease 1s 1 normal forwards;
     h1{
         font-weight: bold;
         color: #fff;
@@ -787,16 +787,6 @@ footer{
     }
     100%{ transform: rotate(-360deg); -webkit-transform: rotate(-360deg); -moz-transform: rotate(-360deg); -ms-transform: rotate(-360deg); -o-transform: rotate(-360deg);
     }
-}
-
-@keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
 }
 
 @keyframes scale-out {

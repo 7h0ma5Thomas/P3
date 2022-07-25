@@ -814,10 +814,8 @@ footer .fa-handshake-angle {
   align-items: center;
   position: fixed;
   z-index: 1;
-  -webkit-animation: fade-in 3s ease 1 normal forwards;
-          animation: fade-in 3s ease 1 normal forwards;
+  animation: scale-out 1s ease 1s 1 normal forwards;
   -webkit-animation: scale-out 1s ease 1s 1 normal forwards;
-          animation: scale-out 1s ease 1s 1 normal forwards;
 }
 .loader h1 {
   font-weight: bold;
@@ -917,22 +915,6 @@ footer .fa-handshake-angle {
     -moz-transform: rotate(-360deg);
     -ms-transform: rotate(-360deg);
     -o-transform: rotate(-360deg);
-  }
-}
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @-webkit-keyframes scale-out {
