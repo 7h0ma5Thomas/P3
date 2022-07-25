@@ -27,10 +27,9 @@ a {
 /* Header */
 header {
   width: 100%;
-  height: 71px;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
 }
 header .header__logo {
   width: 45%;
@@ -119,6 +118,11 @@ aside {
   width: 100%;
   height: 400px;
 }
+@media screen and (min-width: 1920px) {
+  aside {
+    height: 300px;
+  }
+}
 aside h2 {
   padding: 0;
   height: 30px;
@@ -139,6 +143,11 @@ aside .container {
     justify-content: space-around;
   }
 }
+@media screen and (min-width: 1920px) {
+  aside .container {
+    justify-content: space-evenly;
+  }
+}
 
 .stickers {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -152,9 +161,14 @@ aside .container {
   align-items: center;
   align-self: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 428px) {
   .stickers {
     width: 320px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .stickers {
+    height: 30%;
   }
 }
 .stickers span {
@@ -194,6 +208,16 @@ aside .container {
   background-color: #f6f6f6;
   padding-bottom: 50px;
 }
+@media screen and (min-width: 992px) {
+  .resto {
+    height: 700px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .resto {
+    height: 430px;
+  }
+}
 
 #resto__title {
   margin: 50px 0 0 20px;
@@ -209,6 +233,12 @@ aside .container {
   justify-content: space-evenly;
   align-items: center;
 }
+@media screen and (min-width: 992px) {
+  .box {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 .card {
   width: 90%;
@@ -219,6 +249,16 @@ aside .container {
   flex-direction: column;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
+}
+@media screen and (min-width: 992px) {
+  .card {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .card {
+    width: 20%;
+  }
 }
 .card a {
   width: 100%;
@@ -299,6 +339,7 @@ aside .container {
     opacity: 1;
   }
 }
+/* Footer */
 footer {
   width: 100%;
   height: 220px;
@@ -332,6 +373,11 @@ footer .links {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 40px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  footer .links {
+    justify-content: space-evenly;
   }
 }
 footer a {
@@ -401,8 +447,33 @@ footer .fa-handshake-angle {
   justify-content: space-between;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 600px) {
+  .heading {
+    justify-content: center;
+  }
+}
 .heading h1 {
   width: 80%;
+}
+@media screen and (min-width: 600px) {
+  .heading h1 {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .heading h1 {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .heading h1 {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .heading h1 {
+    width: 20%;
+  }
 }
 
 .hearts {
@@ -424,6 +495,64 @@ footer .fa-handshake-angle {
   -webkit-animation: heart 0.7s ease-in-out forwards;
 }
 
+.grouping {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .grouping {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .grouping {
+    justify-content: space-between;
+  }
+}
+.grouping .element {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .grouping .element {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .grouping .element {
+    width: 30%;
+  }
+}
+.grouping .group {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  .grouping .group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grouping .group {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .grouping .group {
+    flex-direction: column;
+  }
+}
+
 .tile {
   display: flex;
   border-radius: 20px;
@@ -435,6 +564,23 @@ footer .fa-handshake-angle {
   height: 70px;
   background: #fff;
   opacity: 0;
+}
+@media screen and (min-width: 600px) {
+  .tile {
+    width: 48%;
+    margin: 0 5px 20px 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tile {
+    width: 90%;
+    margin: 0 15px 30px 15px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .tile {
+    width: 90%;
+  }
 }
 .tile .slide-left {
   width: 100%;
@@ -631,6 +777,11 @@ footer .fa-handshake-angle {
 .wrap-btn {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  .wrap-btn {
+    margin-top: 40px;
+  }
 }
 
 .btn-2 {
