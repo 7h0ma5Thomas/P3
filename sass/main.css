@@ -333,18 +333,22 @@ aside .container {
   position: absolute;
 }
 .card .fa-regular {
-  margin: 193px 10px 0 0;
+  margin: 193px 30px 0 0;
   font-size: 25px;
 }
 .card .fa-solid {
-  margin: 193px 0 0 0;
+  position: absolute;
+  margin: 193px 30px 0 0;
   font-size: 25px;
-  color: #9356DC;
+  color: transparent;
+  background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
 }
 .card .fa-solid:active {
-  animation: heart 0.7s ease-in-out forwards;
-  -webkit-animation: heart 0.7s ease-in-out forwards;
+  animation: heart 0.6s ease-in-out forwards;
+  -webkit-animation: heart 0.6s ease-in-out forwards;
 }
 
 @-webkit-keyframes heart {
@@ -512,7 +516,10 @@ footer .fa-handshake-angle {
 }
 .hearts .fa-solid {
   font-size: 180%;
-  color: #9356DC;
+  color: transparent;
+  background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
 }
 .hearts .fa-solid:active {
@@ -666,8 +673,8 @@ footer .fa-handshake-angle {
   opacity: 0;
 }
 .tile:hover .check {
-  animation: check-slide 0.5s ease-in-out both;
-  -webkit-animation: check-slide 0.5s ease-in-out both;
+  animation: check-slide 1s ease-in-out both;
+  -webkit-animation: check-slide 1s ease-in-out both;
 }
 .tile .fa-circle-check {
   color: #fff;

@@ -349,17 +349,21 @@ aside{
         position: absolute;
     }
     .fa-regular{
-        margin: 193px 10px 0 0;
+        margin: 193px 30px 0 0;
         font-size: 25px;
     }
     .fa-solid{
-        margin: 193px 0 0 0;
+        position: absolute;
+        margin: 193px 30px 0 0;
         font-size: 25px;
-        color: $color-primary;
+        color: transparent;
+        background-image: linear-gradient(to right bottom, $color-secondary, $color-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
         opacity: 0;
         &:active{
-            animation: heart .7s ease-in-out forwards;
-            -webkit-animation: heart .7s ease-in-out forwards;
+            animation: heart .6s ease-in-out forwards;
+            -webkit-animation: heart .6s ease-in-out forwards;
         }
     }
 }
@@ -504,7 +508,10 @@ footer{
     }
     .fa-solid{
         font-size: 180%;
-        color: $color-primary;
+        color: transparent;
+        background-image: linear-gradient(to right bottom, $color-secondary, $color-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
         opacity: 0;
         &:active{
             animation: heart .7s ease-in-out forwards;
@@ -627,8 +634,8 @@ footer{
         opacity: 0;
     }
     &:hover .check{
-        animation: check-slide 0.5s ease-in-out both;
-        -webkit-animation: check-slide 0.5s ease-in-out both;
+        animation: check-slide 1s ease-in-out both;
+        -webkit-animation: check-slide 1s ease-in-out both;
     }
     .fa-circle-check{
         color: #fff;
@@ -643,7 +650,7 @@ footer{
         -moz-transition: 0.8s transform ease-in-out;
         -ms-transition: 0.8s transform ease-in-out;
         -o-transition: 0.8s transform ease-in-out;
-}   
+    }   
     &:hover .fa-circle-check{
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
