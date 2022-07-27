@@ -849,8 +849,10 @@ footer .fa-handshake-angle {
   animation: scale-out 1s ease 1s 1 normal forwards;
   -webkit-animation: scale-out 1s ease 1s 1 normal forwards;
 }
-.loader h1 {
+.loader p {
+  font-family: "shrikhand", "Times New Roman", Times, serif;
   font-weight: bold;
+  font-size: x-large;
   color: #fff;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   text-align: center;

@@ -765,8 +765,10 @@ footer{
     z-index: 1;
     animation: scale-out 1s ease 1s 1 normal forwards;
     -webkit-animation: scale-out 1s ease 1s 1 normal forwards;
-    h1{
+    p{
+        font-family: "shrikhand", 'Times New Roman', Times, serif;
         font-weight: bold;
+        font-size: x-large;
         color: #fff;
         text-shadow : 0 5px 5px rgba(0, 0, 0, 0.3);
         text-align: center;
