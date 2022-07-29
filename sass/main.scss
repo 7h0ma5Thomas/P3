@@ -578,11 +578,6 @@ footer{
     .fa-circle-check{
         color: #fff;
         font-size: 23px;
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
     }   
     &:hover .fa-circle-check{
         transform: rotate(360deg);
