@@ -696,8 +696,8 @@ footer{
     align-items: center;
     position: fixed;
     z-index: 1;
-    animation: scale-out 1s ease normal forwards;
-    -webkit-animation: scale-out 1s ease normal forwards;
+    animation: scale-out 1s ease forwards;
+    -webkit-animation: scale-out 1s ease forwards;
     p{
         font-family: "shrikhand", 'Times New Roman', Times, serif;
         font-weight: bold;
