@@ -737,18 +737,34 @@ footer{
 }
 
 @keyframes spin{
-    0%{ transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg);
+    0%{ transform: rotate(0deg); 
+        -webkit-transform: rotate(0deg); 
+        -moz-transform: rotate(0deg); 
+        -ms-transform: rotate(0deg); 
+        -o-transform: rotate(0deg);
     }
-    100%{ transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg);
+    100%{ transform: rotate(360deg); 
+        -webkit-transform: rotate(360deg); 
+        -moz-transform: rotate(360deg); 
+        -ms-transform: rotate(360deg); 
+        -o-transform: rotate(360deg);
     }
 }
 
 @keyframes scale-out {
 	0% {
 		transform: scale(1);
-	}
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+    }
 
 	100% {
 		transform: scale(0);
-	}
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+		-ms-transform: scale(0);
+		-o-transform: scale(0);
+    }
 }
