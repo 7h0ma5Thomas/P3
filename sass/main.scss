@@ -522,9 +522,9 @@ footer{
         display: flex;
         justify-content: space-between;
         &:hover{
-            animation: text-slide 1s ease-in-out both;
-            -webkit-animation: text-slide 1s ease-in-out both;
-        }
+            animation: text-slide 1s ease-in-out forwards;
+            -webkit-animation: text-slide 1s ease-in-out forwards;
+}
     }
     .tile__body{
         padding: 12px;
@@ -572,9 +572,9 @@ footer{
         opacity: 0;
     }
     &:hover .check{
-        animation: check-slide 1s ease-in-out both;
-        -webkit-animation: check-slide 1s ease-in-out both;
-    }
+        animation: check-slide 1s ease-in-out forwards;
+        -webkit-animation: check-slide 1s ease-in-out forwards;
+}
     .fa-circle-check{
         color: #fff;
         font-size: 23px;
