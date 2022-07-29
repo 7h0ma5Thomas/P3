@@ -730,9 +730,9 @@ footer{
             border-top-color: #fff;
             border-bottom-color: #fff;
             opacity: 0.6;
-            animation: spinreverse 2s linear infinite;
-            -webkit-animation: spinreverse 2s linear infinite;
-        }
+            animation: spin 2s linear infinite;
+            -webkit-animation: spin 2s linear infinite;
+}
     }
 }
 
@@ -740,13 +740,6 @@ footer{
     0%{ transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg);
     }
     100%{ transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg);
-    }
-}
-
-@keyframes spinreverse{
-    0%{ transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg);
-    }
-    100%{ transform: rotate(-360deg); -webkit-transform: rotate(-360deg); -moz-transform: rotate(-360deg); -ms-transform: rotate(-360deg); -o-transform: rotate(-360deg);
     }
 }
 
